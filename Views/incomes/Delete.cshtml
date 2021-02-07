@@ -1,0 +1,49 @@
+﻿@model myBudget.Entity.incomes
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+
+<div class="container">
+    <span class="d-flex justify-content-start"> @Html.ActionLink(" ", "Index", null, new { @class = "fas fa-chevron-left fa-3x" })</span>
+    <h1 class="d-flex justify-content-center">Delete</h1>
+</div>
+
+
+<div class="formContainer">
+    <dl class="row">
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.incomeName)
+        </dt>
+
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.incomeName)
+        </dd>
+
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.incomeAmount)
+        </dt>
+
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.incomeAmount)
+        </dd>
+
+        <dt class="col-6">
+            @Html.DisplayNameFor(model => model.incomeDate)
+        </dt>
+
+        <dd class="col-6">
+            @Html.DisplayFor(model => model.incomeDate)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="formGroup">
+            <button type="submit">Delete</button>
+        </div>
+    }
+</div>

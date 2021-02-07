@@ -1,0 +1,40 @@
+﻿.fa-pen,
+.fa-pen:hover,
+.fa-pen:link,
+.fa-pen:visited,
+.fa-pen:active,
+.fa-pen:focus {
+    padding: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fa-trash,
+.fa-trash:hover,
+.fa-trash:link,
+.fa-trash:visited,
+.fa-trash:active,
+.fa-trash:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fa-plus-circle,
+.fa-plus-circle:hover,
+.fa-plus-circle:link,
+.fa-plus-circle:visited,
+.fa-plus-circle:active,
+.fa-plus-circle:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.fa-chevron-left,
+.fa-chevron-left:hover,
+.fa-chevron-left:link,
+.fa-chevron-left:visited,
+.fa-chevron-left:active,
+.fa-chevron-left:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+}

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<myBudget.Entity.expences>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="d-flex justify-content-center text-center align-items-center">
+    <span class="col-2"> @Html.ActionLink(" ", "Index", "Home", null, new { @class = "fas fa-chevron-left fa-3x" })</span>
+    <h2 class="col-8">Expences</h2>
+    <span class="col-2">@Html.ActionLink(" ", "Create", null, new { @class = "fas fa-plus-circle fa-3x" })</span>
+</div>
+<div class="TableContainer">
+
+    <table class="table table-borderless">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.expenceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.expenceAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.expenceDate)
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.expenceName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.expenceAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.expenceDate)
+                </td>
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id = item.Id }, new { @class = "fas fa-pen fa-lg" })
+                    @Html.ActionLink(" ", "Delete", new { id = item.Id }, new { @class = "fas fa-trash fa-lg" })
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</div>

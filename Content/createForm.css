@@ -1,0 +1,69 @@
+﻿
+.formContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.formGroup {
+    padding: 10px;
+}
+
+
+.table {
+    color: #FFFFFF;
+}
+
+.textInput {
+    height: 50px;
+    width: 500px;
+    padding: 1em;
+    border: 0px;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 1.2em;
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+    .textInput:focus {
+        outline: none;
+    }
+
+dd {
+    text-align: left;
+}
+
+dt {
+    text-align: right;
+}
+
+.valMsg {
+    display: block;
+    margin: 5px;
+}
+
+.TableContainer{
+    height: 400px;
+    overflow-y: scroll;
+}
+.TableContainer tr th{
+    position:sticky;
+    top: 0;
+    background-color: #222222;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
